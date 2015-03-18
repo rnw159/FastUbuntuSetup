@@ -1,6 +1,7 @@
 #Enable the other repos that are disabled by default
 echo "Enabling Partner Repos"
-sudo sed 's/\# deb http\:\/\/archive\.canonical\.com\/ubuntu natty partner/deb http\:\/\/archive\.canonical\.com\/ubuntu natty partner/' /etc/apt/sources.list | sed 's/\# deb-src http\:\/\/archive\.canonical\.com\/ubuntu natty partner/deb-src http\:\/\/archive\.canonical\.com\/ubuntu natty partner/' - > /tmp/newfile && sudo mv -f /tmp/newfile /etc/apt/sources.list
+sudo apt-get add-repository -y universe
+sudo apt-get add-repository -y multiverse
 sudo apt-get update
 #Download and Install GetDeb and PlayDeb
 echo "Downloading GetDeb and PlayDeb" &&
