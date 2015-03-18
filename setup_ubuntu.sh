@@ -2,7 +2,7 @@
 echo "Enabling Partner Repos"
 sudo apt-get add-repository -y universe
 sudo apt-get add-repository -y multiverse
-sudo apt-get update
+
 #Download and Install GetDeb and PlayDeb
 echo "Downloading GetDeb and PlayDeb" &&
 wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
