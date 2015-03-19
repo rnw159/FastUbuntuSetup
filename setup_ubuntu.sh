@@ -1,7 +1,7 @@
 #Enable the other repos that are disabled by default
 echo "Enabling Partner Repos"
-sudo apt-get add-repository -y universe
-sudo apt-get add-repository -y multiverse
+sudo add-apt-repository -y universe
+sudo add-apt-repository -y multiverse
 
 #Download and Install GetDeb and PlayDeb
 echo "Downloading GetDeb and PlayDeb" &&
